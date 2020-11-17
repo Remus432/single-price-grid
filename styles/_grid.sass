@@ -1,0 +1,30 @@
+.grid
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  width: 750px
+  margin: auto
+  box-shadow: 0 0 3rem rgba($grayish-blue, 0.15)
+  border-radius: 10px
+
+.grid__community
+  grid-area: "community"
+  grid-column: 1 / span 3
+  border-top-right-radius: 10px
+  border-top-left-radius: 10px
+
+.grid__cta
+  grid-area: "pricing"
+  background-color: $cyan
+  color: #fff
+  border-bottom-left-radius: 10px 
+
+.grid__why
+  grid-area: "us"
+  background-color: hsl(179, 52%, 55%)
+  border-bottom-right-radius: 10px
+  color: #fff
+
+.grid__community,
+.grid__cta,
+.grid__why
+  padding: 4rem
